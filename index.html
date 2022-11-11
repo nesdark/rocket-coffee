@@ -5,6 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RocketCoffee</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./setting.css" />
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./nav.css" />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./animation.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <div class="app">
+      <header>
+        <div class="logo-mobile">
+          <a href="#">
+            <img src="./assets/logo-mobile.svg" alt="Rocketseat logo" />
+          </a>
+        </div>
+        <div class="logo-desktop">
+          <a href="#">
+            <img src="./assets/logo-desktop.svg" alt="Rocketseat logo" />
+          </a>
+        </div>
+        <nav class="menu">
+          <ul>
+            <li>Home</li>
+            <li>Menu</li>
+            <li>Recompensas</li>
+            <li>Gift Cards</li>
+            <li>Lojas</li>
+          </ul>
+        </nav>
+        <button class="open-menu" onclick="Menu.toggleMenu()">
+          <img src="./assets/menu-buguer-open.svg" alt="Abrir menu" />
+        </button>
+        <button class="close-menu" onclick="Menu.toggleMenu()">
+          <img src="./assets/menu-buguer-close.svg" alt="Abrir menu" />
+        </button>
+        <a href="#" class="button">
+          Pegar meu café
+          <img src="./assets/arrow.svg" alt="Icone de seta" />
+        </a>
+      </header>
+      <main>
+        <h2 class="mobile-only">
+          O café que fará seu <br />
+          código decolar para <br />
+          o próximo nível.
+        </h2>
+
+        <a href="#" class="button">
+          Pegar meu café
+          <img src="./assets/arrow.svg" alt="Icone de seta" />
+        </a>
+
+        <h2>Great Coffee <br /><span>&lt; Great Code &sol;&gt;</span></h2>
+        <div class="bg">
+          <img
+            src="assets/rocket-coffee.png"
+            alt="Imagem de cafés da Rocketseat"
+            class="coffee"
+          />
+        </div>
+      </main>
+      <div class="circle-left"></div>
+      <div class="circle-right"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>

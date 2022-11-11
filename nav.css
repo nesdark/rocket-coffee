@@ -1,0 +1,54 @@
+body.menu-expanded main {
+  display: none;
+}
+
+body .menu ul,
+body .close-menu,
+body.menu-expanded .open-menu {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+}
+
+body.menu-expanded .menu ul,
+body.menu-expanded .close-menu,
+body .open-menu {
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+}
+
+body.menu-expanded .menu {
+  position: fixed;
+  text-align: left;
+
+  animation: toLeft 0.2s forwards;
+
+  left: 0;
+  top: 9.55rem;
+  width: 100%;
+
+  color: white;
+}
+
+.menu ul li {
+  font-weight: 400;
+  font-size: 1.8rem;
+  padding-left: 3.82rem;
+  padding-block: 1.7rem 1.4rem;
+
+  line-height: 2.5rem;
+  color: var(--gray);
+
+  border-bottom: 1px solid #29292e;
+  cursor: pointer;
+}
+
+.menu ul li:hover {
+  padding-left: 3.2rem;
+
+  font-weight: 700;
+
+  color: #e1e1e6;
+  border-left: #8257e6 solid 5px;
+}

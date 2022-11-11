@@ -1,0 +1,26 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-left: 2.6rem;
+  padding-right: 4.6rem;
+
+  height: 9.55rem;
+  border-bottom: solid 1px #29292e;
+}
+
+header .logo-desktop {
+  visibility: hidden;
+  opacity: 0;
+}
+
+header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+header .button {
+  display: none;
+}

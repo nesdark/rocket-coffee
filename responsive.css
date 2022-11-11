@@ -1,0 +1,77 @@
+@media (min-width: 1000px) {
+  body {
+    background: url(./assets/bg.svg);
+    background-size: cover;
+    background-position: top, center;
+    background-repeat: no-repeat;
+  }
+
+  body .app {
+    background: none;
+  }
+
+  header {
+    padding: 0;
+
+    margin-inline: auto;
+    width: 80%;
+    justify-content: center;
+    gap: 14rem;
+    border: none;
+  }
+
+  .logo-mobile {
+    display: none;
+  }
+
+  header .logo-desktop {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header .menu ul {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+    gap: 3.2rem;
+  }
+
+  .menu ul {
+    display: flex;
+  }
+
+  .menu ul li {
+    padding: 0;
+    padding-block: 0;
+
+    color: var(--gray);
+
+    cursor: pointer;
+    border: none;
+  }
+
+  .menu ul li:hover {
+    font-weight: 400;
+    padding: 0;
+    border: none;
+  }
+
+  header .close-menu,
+  header .open-menu {
+    display: none;
+  }
+
+  header .button {
+    display: flex;
+    margin: 0;
+  }
+
+  main .mobile-only,
+  a:nth-child(2) {
+    display: none;
+  }
+
+  img.coffee {
+    width: 798.78px;
+  }
+}
